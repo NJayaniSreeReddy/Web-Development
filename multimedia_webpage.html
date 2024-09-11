@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Multimedia Webpage</title>
+<style>
+        body {
+            background-color: #a8e6cf;
+            padding:20px;
+        }
+        img {
+            width:500px;
+            border: 2px solid #ffaaa5;
+        }
+
+        
+        video {
+            width:500px;
+            border: 2px solid #ffaaa5;
+        }
+
+        
+        audio {
+            width: 500px;
+           
+        }
+
+       
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            
+        }
+
+        th, td {
+            border: 2px solid #ffaaa5;
+            padding: 8px;
+            text-align: center;
+            background-color: #fdffab;
+            color: black;
+        }
+       th{
+            background-color:#ffd3b6;
+       }
+        iframe {
+            width: 500px;
+            height: 500px;
+        }
+
+        form {
+            width:500px;
+            padding:8px;
+            background-color:#fdffab;
+            border: 2px solid #ffaaa5;
+           
+        }
+        label{
+            display:block;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 400px;
+            padding: 8px;
+            border: 2px solid #ffaaa5;
+           }
+
+       
+        button {
+            background-color: #ffaaa5;
+            color: white;
+            padding: 10px;
+            border: none;
+           }
+
+        
+    </style>
+</head>
+<body>
+<div class="content">
+<h1 style="text-align:center;">Welcome to My Multimedia Webpage</h1>
+
+<h2>Image Section</h2>
+<img src="mbulogo.jpg" alt="College Logo">
+
+<h2>Video Section</h2>
+<video controls>
+<source src="your-video.mp4" type="video/mp4">
+</video>
+
+<h2>Audio Section</h2>
+<audio controls>
+<source src="your-audio.mp3" type="audio/mpeg">
+</audio>
+
+<h2>Table Section</h2>
+<table>
+<tr>
+<th>Dept</th>
+<th>Code</th>
+<th>no. of students</th>
+</tr>
+<tr>
+<td>CSE</td>
+<td>101</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>IT</td>
+<td>102</td>
+<td>700</td>
+</tr>
+<tr>
+<td>ECE</td>
+<td>103</td>
+<td>800</td>
+</tr>
+</table>
+
+<h2>Iframe Section</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15510.237098135733!2d79.289208!3d13.623708!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2b511cbefcaf3%3A0x4eb0b29e1d33b522!2sMohan%20Babu%20University!5e0!3m2!1sen!2sin!4v1725450390631!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<h2>Form Section</h2>
+<form action="/submit" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+
+<label>Gender:</label>
+<label><input type="radio" name="gender" value="male" required> Male</label>
+<label><input type="radio" name="gender" value="female" required> Female</label>
+
+<button type="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
