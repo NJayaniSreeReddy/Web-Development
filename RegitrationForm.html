@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RegistrationForm</title>
+        <style>
+    body {
+    background-image: url('formbackdrop1.jpeg');
+    background-size: cover;
+}
+
+.container {
+    width: 700px;
+    margin-left: 400px;
+    padding: 20px;
+    background-color: #f0f2eb;
+    border-radius: 10px;
+}
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #8cbeaa;
+}
+input, select{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+    
+}
+
+button {
+    margin-left:75%;
+    padding: 10px;
+    background-color: #f09027;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:100px;
+}
+
+
+
+
+        </style>
+    </head>
+</html>
+<body>
+    <div class="container">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+
+            <label for="father-name">Father's Name</label>
+            <input type="text" id="father-name" name="father-name" placeholder="Father's Name"><br>
+
+            <label for="dob">D-O-B</label>
+            <input type="date" id="dob" name="dob"><br>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number"><br>
+
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" placeholder="Email ID"><br>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Address"><br>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="india">India</option>
+            </select><br>
+
+            <label for="state">State</label>
+            <select id="state" name="state">
+                <option value="tamilnadu">Tamil Nadu</option>
+            </select><br>
+
+            <label for="district">District</label>
+            <select id="district" name="district">
+                <option value="ariyalur">Ariyalur</option>
+                <option value="chengalpattu">Chengalpattu</option>
+                <option value="chennai">Chennai</option>
+                <option value="coimbatore">Coimbatore</option>
+                <option value="cuddalore">Cuddalore</option>
+                <option value="dharmapuri">Dharmapuri</option>
+                <option value="dindigul">Dindigul</option>
+                <option value="erode">Erode</option>
+                <option value="kallakurichi">Kallakurichi</option>
+                <option value="kanchipuram">Kanchipuram</option>
+                <option value="kanyakumari">Kanyakumari</option>
+                <option value="karur">Karur</option>
+                <option value="krishnagiri">Krishnagiri</option>
+                <option value="madurai">Madurai</option>
+                <option value="mayiladuthurai">Mayiladuthurai</option>
+                <option value="nagapattinam">Nagapattinam</option>
+                <option value="namakkal">Namakkal</option>
+                <option value="nilgiris">Nilgiris</option>
+                <option value="perambalur">Perambalur</option>
+                <option value="pudukkottai">Pudukkottai</option>
+                <option value="ramanathapuram">Ramanathapuram</option>
+                <option value="ranipet">Ranipet</option>
+                <option value="salem">Salem</option>
+                <option value="sivaganga">Sivaganga</option>
+                <option value="tenkasi">Tenkasi</option>
+                <option value="thanjavur">Thanjavur</option>
+                <option value="theni">Theni</option>
+                <option value="thiruvallur">Thiruvallur</option>
+                <option value="thiruvarur">Thiruvarur</option>
+                <option value="thoothukudi">Thoothukudi</option>
+                <option value="tiruchirappalli">Tiruchirappalli</option>
+                <option value="tirunelveli">Tirunelveli</option>
+                <option value="tirupattur">Tirupattur</option>
+                <option value="tiruppur">Tiruppur</option>
+                <option value="tiruvannamalai">Tiruvannamalai</option>
+                <option value="vellore">Vellore</option>
+                <option value="viluppuram">Viluppuram</option>
+                <option value="virudhunagar">Virudhunagar</option>
+
+            </select><br>
+            <label>Skills</label>
+            <label style="color:#6f6f6f;"><input type="checkbox" name="skills" value="html"> HTML</label>
+            <label style="color:#6f6f6f;""><input type="checkbox" name="skills" value="css"> CSS</label>
+            <label style="color:#6f6f6f;""><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+            <label style="color:#6f6f6f;""><input type="checkbox" name="skills" value="react"> React JS</label>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
