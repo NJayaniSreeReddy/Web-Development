@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button-Based Keyboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(16, 50px); 
+    gap: 7px;
+    background:#9ba6a5;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+button {
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 5px;
+    transition: transform 0.1s;
+}
+button{
+    animation-name: keyboard;
+    animation-duration: 3s;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+}
+@keyframes keyboard{
+    25%{
+        box-shadow:0px 0px 20px #fcff82 ;
+    }
+    50%{
+        box-shadow:0px 0px 20px #ec729c;
+    }
+    75%{
+        box-shadow:0px 0px 20px #fd5959;
+    }
+    100%{
+        box-shadow:0px 0px 20px #c9fdd7;
+    }
+
+
+}
+
+button.wide1 {
+    grid-column: span 3; 
+}
+button.wide2 {
+    grid-column: span 2; 
+}
+button.wide3 {
+    grid-column: span 2; 
+}
+button.wide4 {
+    grid-column: span 2; 
+}
+button.wide5 {
+    grid-column: span 3; 
+}
+button.wide6 {
+    grid-column: span 3; 
+}
+button.wide7 {
+    grid-column: span 2; 
+}
+button.wide {
+    grid-column: span 2; 
+}
+button.triple {
+    grid-column: span 2; 
+}
+button.space {
+    grid-column: span 4; 
+}
+
+button:hover {
+    transform: scale(1.1);
+   
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="keyboard">
+        <button>Esc</button>
+        <button>F1</button>
+        <button>F2</button>
+        <button>F3</button>
+        <button>F4</button>
+        <button>F5</button>
+        <button>F6</button>
+        <button>F7</button>
+        <button>F8</button>
+        <button>F9</button>
+        <button>F10</button>
+        <button>F11</button>
+        <button>F12</button>
+        <button>PrtSc</button>
+        <button>Del</button>
+        <button>On</button>
+
+        
+        <button>~</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>0</button>
+        <button>_-</button>
+        <button>=+</button>
+        <button class="wide1">Backspace</button>
+
+        
+        <button class="wide2">Tab</button>
+        <button>Q</button>
+        <button>W</button>
+        <button>E</button>
+        <button>R</button>
+        <button>T</button>
+        <button>Y</button>
+        <button>U</button>
+        <button>I</button>
+        <button>O</button>
+        <button>P</button>
+        <button>[</button>
+        <button>]</button>
+        <button class="wide3">\|</button>
+
+        
+        <button class="wide4">CapsLk</button>
+        <button>A</button>
+        <button>S</button>
+        <button>D</button>
+        <button>F</button>
+        <button>G</button>
+        <button>H</button>
+        <button>J</button>
+        <button>K</button>
+        <button>L</button>
+        <button>:;</button>
+        <button>"'</button>
+        <button class="wide5">Enter</button>
+
+        
+        <button class="triple">Shift</button>
+        <button>Z</button>
+        <button>X</button>
+        <button>C</button>
+        <button>V</button>
+        <button>B</button>
+        <button>N</button>
+        <button>M</button>
+        <button>,<</button>
+        <button>.></button>
+        <button>/?</button>
+        <button>Up</button>
+        <button class="wide6">Shift</button>
+
+        
+        <button class="wide7">Ctrl</button>
+        <button>Fn</button>
+        <button class="windows">
+            <i class="fab fa-windows"></i> <!-- Font Awesome Windows Icon -->
+        </button>
+        <button>Alt</button>
+        <button class="space">Space</button>
+        <button>AltGr</button>
+        <button>Ctrl</button>
+        <button>Right</button>
+        <button class="wide">Down</button>
+        <button class="wide">Left</button>
+    </div>
+    
+</body>
+</html>
