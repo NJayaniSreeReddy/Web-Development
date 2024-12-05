@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bulb On And Off</title>
+    <style>
+        img{
+            width:200px;
+            height:200px;
+            border:2px solid yellow;
+            padding:20px;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #afc5ff; 
+        }
+        .button-container {
+            display: flex;
+            gap: 10px; 
+            margin-top: 20px; 
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff9c6d;
+            color:#fd5959;
+            border:2px solid yellow;
+            
+        }
+    </style>
+</head>
+<body>
+    <img src="bulboff.png" alt="bulboff" id="img1"><br>
+    <div class="button-container">
+        <button id="BulbOn">On</button>
+        <button id="BulbOff">Off</button>
+    </div>
+    <script>
+        document.getElementById("BulbOn").addEventListener("click",function On(){
+            document.getElementById("img1").src="bulbon.png";
+
+        });
+        document.getElementById("BulbOff").addEventListener("click", function Off() {
+            document.getElementById("img1").src = "bulboff.png";
+        });
+    </script>
+</body>
+</html>
